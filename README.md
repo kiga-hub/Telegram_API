@@ -104,3 +104,11 @@ telegram API 服务器对外部接口调用进行限制，群成员人数过一�
 如果获取中文名为username的 querykey设置为 `''`即可。
 
 启用注释掉的部分匹配度能提高很多，但是会更耗时
+
+## 其他
+
+Proxy 相关
+For Python >= 3.6 : install python-socks[asyncio]
+For Python <= 3.5 : install PySocks
+
+TelegramClient('anon', api_id, api_hash, proxy=("socks5", '127.0.0.1', 4444))
